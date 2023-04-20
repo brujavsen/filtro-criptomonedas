@@ -1,6 +1,7 @@
 body {
     background: rgb(59,24,95);
-    background: linear-gradient(90deg, rgba(59,24,95,1) 0%, rgba(15,52,96,1) 100%);
+    background: linear-gradient(90deg, rgb(2, 134, 79) 0%, rgb(6, 48, 240) 100%);
+    overflow: hidden;
 }
 img {
     max-width: 100%;
@@ -23,6 +24,10 @@ h1::after {
 }
 .container img {
     margin-top: 150px;
+}
+
+select {
+    cursor: pointer;
 }
 
 label {
@@ -136,4 +141,43 @@ p.precio{
         -webkit-transform: scale3D(0, 0, 1);
                 transform: scale3D(0, 0, 1);
     } 
+}
+
+/* Mouse blur style */
+#blob {
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(255, 251, 0),
+        rgb(255, 238, 0)
+    );
+    height: 300px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(200px);
 }
