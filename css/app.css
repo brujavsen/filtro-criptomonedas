@@ -1,6 +1,6 @@
 body {
-    background: rgb(59,24,95);
-    background: linear-gradient(90deg, rgb(2, 134, 79) 0%, rgb(6, 48, 240) 100%);
+    background: rgb(255,59,0);
+    background: linear-gradient(90deg, rgba(255,59,0,1) 0%, rgba(0,112,255,1) 64%);
     overflow: hidden;
 }
 img {
